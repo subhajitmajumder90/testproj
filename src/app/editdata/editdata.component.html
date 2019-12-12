@@ -1,0 +1,18 @@
+<p>editdata works!</p>
+<div>
+    <form [formGroup]="formData">
+        Name: <br>
+        <input type="text" formControlName="name">
+        <br>
+        Phone: <br>
+        <input type="text" formControlName="phone" >
+        <br>
+        Email: <br>
+        <input type="text" formControlName="email" >
+        <br>
+        Password: <br>
+        <input type="password" formControlName="password" >
+        <br><br>
+        <button (click)="editformdata()">Submit</button>
+      </form> 
+</div>

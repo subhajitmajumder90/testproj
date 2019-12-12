@@ -1,0 +1,21 @@
+<p>apiform works!</p>
+<div>
+
+        <table border="solid">
+                <tr>
+                  <th>Name</th>
+                  <th>Phone</th>
+                  <th>Email</th>
+                </tr>
+                <!-- <tr *ngFor="let row of regList; let i = index"></tr> -->
+                <tr *ngFor="let row of slist,let i = index">
+                  <td>{{ row.name }}</td>
+                  <td>{{ row.phone }}</td>
+                  <td>{{ row.email }}</td>
+                  <td>{{ row.id    }}</td>
+                  <input type="hidden" #id value="{{row.id}}">
+                  <td><button (click)="editlist(row)">Edit</button></td>
+                  <td><Button (click)="deletelist(row.id, i)">Delete</Button></td>
+                </tr>
+        </table>
+</div>
