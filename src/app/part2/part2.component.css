@@ -1,0 +1,17 @@
+.link{
+    text-decoration: none;
+    font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffff;
+    padding: 9px 16px;
+    border-radius: 5px;
+    border: #007bff solid;
+    
+}
+.link:hover{
+    background-color: #008bff;
+    border: #004bff solid;
+}

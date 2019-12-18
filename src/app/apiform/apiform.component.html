@@ -6,6 +6,8 @@
                   <th>Name</th>
                   <th>Phone</th>
                   <th>Email</th>
+                  <th>Id</th>
+                  <th colspan="2">Clickable</th>
                 </tr>
                 <!-- <tr *ngFor="let row of regList; let i = index"></tr> -->
                 <tr *ngFor="let row of slist,let i = index">
@@ -16,6 +18,11 @@
                   <input type="hidden" #id value="{{row.id}}">
                   <td><button (click)="editlist(row)">Edit</button></td>
                   <td><Button (click)="deletelist(row.id, i)">Delete</Button></td>
+                </tr>
+                <tr>
+                  <td colspan="6">
+                    <a routerLink="/dashboard/part2" class="link" routerLinkActive="active">Add List</a>
+                  </td>
                 </tr>
         </table>
 </div>
